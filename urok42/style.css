@@ -1,0 +1,10 @@
+.myelement {
+    font-size: 76px;
+    background: 
+    url("cat.jpg")
+    center / cover;
+    height: 70vh;
+    width: 90%;
+    margin: 20px 80px;
+    padding: 20px;
+}
