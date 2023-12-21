@@ -2,3 +2,5 @@ Open File
 Jinja Фреймворк
 Mouse
 Keyboard
+Flags
+Laptop
