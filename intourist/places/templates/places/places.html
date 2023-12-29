@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block page %}
+    <h1>Список всех мест</h1>
+    {% for place in places %}
+        <div><a href="{% url 'place' place.id %}">{{place.name}}</a> - {{place.location}}</div>
+    {% endfor %}
+{% endblock %}
