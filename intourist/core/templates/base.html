@@ -25,7 +25,7 @@
                 <a class="nav-link" href="{% url 'create-place' %}">Создать</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Редактировать</a>
+                <a class="nav-link" href="{% url 'cbv' %}">ClassBasedView</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -37,7 +37,7 @@
       </nav>
       <div class="container">
         {% block page %}
-            
+
         {% endblock %}
       </div>
 </body>
