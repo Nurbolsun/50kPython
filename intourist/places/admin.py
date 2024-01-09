@@ -3,4 +3,10 @@ from .models import Place, Feedback
 # Register your models here.
 
 admin.site.register(Place)
-admin.site.register(Feedback)
+
+class FeedbackAdmin(admin.ModelAdmin):
+    list_display = ['user','place', 'text_back']
+    list_editable = ['place']
+    search_fields = ['text_back']
+
+admin.site.register(Feedback, FeedbackAdmin)
